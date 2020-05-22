@@ -8,21 +8,22 @@
     <!--Additional CSS-->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="stylesheet.css" />
     <title>About Me</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#apollosNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="apollosNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="home.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html"> Gallery </a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"> About Me</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-baby"></i> About Me</a></li>
                 </ul> 
             </div>
         </div>
@@ -30,10 +31,59 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>About Me</h2>
+                <h2 class="text-center">About Me</h2>
                 <p>Hi friends,<br>
-                    My name is Apollos, NO APOLLOS! 
+                    My name is Apollos, NO APOLLOS! Here are some facts about my family. 
                 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <h3 class="card-header text-white text-center">Facts About Me</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Born</dt>
+                            <dd class="col-6">Jan 06, 2018</dd>
+                            <dt class="col-6">Favorite Color</dt>
+                            <dd class="col-6">Currently <span style="color:blue;font-family: DK Crayon Crumble;">Blue</span>, ask me tomorrow, it'll change</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <h3 class="card-header text-white text-center">Facts About My Mommy</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Born</dt>
+                            <dd class="col-6">April 13th, 1989</dd>
+                            <dt class="col-6">Favorite Color</dt>
+                            <dd class="col-6"><span style="color: gray;font-family: DK Crayon Crumble;">Gray</span></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <h3 class="card-header text-white text-center">Facts About My Papa</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Born</dt>
+                            <dd class="col-6">June 17, 1988</dd>
+                            <dt class="col-6">Favorite Color</dt>
+                            <dd class="col-6"><span style="color:red;font-family: DK Crayon Crumble;">Red</span></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="col text-center">Here are pictures of everybody</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="img-thumbnail rounded-circle" src="imgs/IMG_2150.jpg">
             </div>
         </div>
     </div>
