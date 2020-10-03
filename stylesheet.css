@@ -1,16 +1,18 @@
+body, html{
+    height: 100%;
+}
 h1,h2,h3{
     font-family:"DK Crayon Crumble", "monospace";
 }
-nav{
-    background-image: linear-gradient(to right,rgb(0, 98, 128),red, rgb(0, 98, 128));
+.jumbotron{
+    background-image: linear-gradient(to right,rgb(0, 98, 128),red);
     font-family: "DK Crayon Crumble", "monospace";
     font-size: x-large;
-    margin-bottom: 30px;
+    margin:0px;
 }
-.jumbotron {
-    margin-bottom: 20px;
+nav {
     padding: 30px;
-    background-image: linear-gradient(to right,red, rgb(0, 98, 128), red);
+    background-color: rgba(60,30,70,.4); 
     color: white;
 }
 dt{
@@ -18,4 +20,11 @@ dt{
 }
 .card-header{
     background-color: rgb(0, 98, 128);
+}
+.bg{
+    background-image: url("imgs/FullSizeR_17.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
