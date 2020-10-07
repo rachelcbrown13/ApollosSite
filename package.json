@@ -4,9 +4,16 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copydata && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin src/img/* -o dist/img",
+    "lite": "lite-server",
     "start": "npm run lite",
-    "lite": "lite-server"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin aboutMe.html -d dist --htmlmin -o dist/aboutMe.html && usemin gallery.html -d dist --htmlmin -o dist/gallery.html",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "repository": {
     "type": "git",
