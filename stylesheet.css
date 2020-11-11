@@ -12,17 +12,14 @@ h1,h2,h3{
 }
 nav {
     padding: 30px;
-    background-color: rgba(60,30,70,.4); 
+    background-color: black; 
     color: white;
 }
 dt{
     font-family: 'DK Crayon Crumble';
 }
-.card-header{
-    background-color: rgb(0, 98, 128);
-}
 .bg{
-    background-image: url("img/FullSizeR_17.jpg");
+    background-image: url("src/img/FullSizeR_17.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
